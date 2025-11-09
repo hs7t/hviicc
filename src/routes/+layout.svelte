@@ -15,7 +15,7 @@
 <div id="main-container">
 	<header id="header">
 		<div class="section website-info">
-			<a href="#navigation">placeholder</a>
+			<a href="#navigation">hop</a>
 			<p><a href="/">hvii.cc</a></p>
 		</div>
 		<div class="section site-details">
@@ -29,7 +29,7 @@
 
 	<nav id="navigation">
 		<ul>
-			<li><a href="/about">About</a></li>
+			<li><a href="/">About</a></li>
 			<li><a href="/projects">Projects</a></li>
 			<li><a href="/writing">Writing</a></li>
 		</ul>
