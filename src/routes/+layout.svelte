@@ -1,4 +1,6 @@
 <script lang="ts">
+	import Header from '$lib/components/Header.svelte';
+	import Navigation from '$lib/components/Navigation.svelte';
 	import '$lib/styles/style.css';
 
 	let { children, data } = $props();
@@ -13,27 +15,11 @@
 </svelte:head>
 
 <div id="main-container">
-	<header id="header">
-		<div class="section website-info">
-			<p><a href="/">hvii.cc</a></p>
-			<a href="#navigation">hop to navigation</a>
-		</div>
-		<div class="section page-info">
-			<p>{data.title}</p>
-		</div>
-	</header>
-
+	<Header title={data.title} />
 	<main>
 		{@render children()}
 	</main>
-
-	<nav id="navigation">
-		<ul>
-			<li><a href="/">About</a></li>
-			<li><a href="/projects">Projects</a></li>
-			<li><a href="/writing">Writing</a></li>
-		</ul>
-	</nav>
+	<Navigation id="navigation" />
 </div>
 
 <style>
@@ -42,45 +28,7 @@
 		margin: auto;
 	}
 
-	header {
-		display: flex;
-		flex-direction: column;
-	}
-
-	header .section {
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-		align-items: center;
-
-		padding: 0.8rem;
-		flex-grow: 1;
-	}
-
-	header .section.website-info {
-		background-color: var(--w-color-accent-A);
-		color: var(--w-color-accent-A-contrast);
-	}
-
-	header .section.page-info {
-		justify-content: center;
-	}
-
-	nav ul {
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-		align-items: center;
-
-		padding: 0.8rem;
-		flex-grow: 1;
-	}
-
-	nav ul li {
-		list-style: none;
-	}
-
-	main, header .section, nav {
+	main {
 		border: var(--w-border-general);
 		border-top: unset;
 	}
