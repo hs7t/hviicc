@@ -6,6 +6,9 @@
 	--w-color-accent-A-contrast:	#ffffff;
 	--w-color-content-A: 			#000000;
 	--w-color-background-A: 		#ffffff;
+
+	--w-border-general:				solid 1.2pt var(--w-color-accent-A);
+	--w-border-attention:			dashed 1.2pt var(--w-color-accent-A)
 }
 
 * {
