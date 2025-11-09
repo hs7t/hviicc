@@ -1,10 +1,11 @@
 :root {
-	--w-font-family-primary-A: Arial, Inter, system-ui, sans-serif;
-	--w-font-size-A: 1.2rem;
+	--w-font-family-primary-A: 		Arial, Inter, system-ui, sans-serif;
+	--w-font-size-A: 				1.2rem;
 
-	--w-color-accent-A: #003cff;
-	--w-color-content-A: #000000;
-	--w-color-background-A: #ffffff;
+	--w-color-accent-A:				#003cff;
+	--w-color-accent-A-contrast:	#ffffff;
+	--w-color-content-A: 			#000000;
+	--w-color-background-A: 		#ffffff;
 }
 
 * {
