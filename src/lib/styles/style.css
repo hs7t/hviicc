@@ -19,6 +19,7 @@
 
 body {
 	font-family: var(--w-font-family-primary);
+	font-size: var(--w-font-size-A);
 }
 
 section {
@@ -32,6 +33,10 @@ h1, h2, h3, h4, h5 {
 	color: var(--w-color-accent-A);
 }
 
+p {
+	line-height: 1.6;
+}
+
 .paragraph-block {
 	display: flex;
 	flex-direction: column;
@@ -42,4 +47,9 @@ h1, h2, h3, h4, h5 {
 
 a {
 	color: inherit;
+}
+
+::selection {
+	background-color: var(--w-color-accent-A);
+	color: var(--w-color-accent-A-contrast);
 }
