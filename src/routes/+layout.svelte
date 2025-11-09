@@ -12,29 +12,36 @@
 	<title>{data.title}</title>
 </svelte:head>
 
-<header id="header">
-	<div class="section website-info">
-		<a href="#navigation">placeholder</a>
-		<p><a href="/">hvii.cc</a></p>
-	</div>
-	<div class="section site-details">
-		<p>{data.title}</p>
-	</div>
-</header>
+<div id="main-container">
+	<header id="header">
+		<div class="section website-info">
+			<a href="#navigation">placeholder</a>
+			<p><a href="/">hvii.cc</a></p>
+		</div>
+		<div class="section site-details">
+			<p>{data.title}</p>
+		</div>
+	</header>
 
-<main>
-	{@render children()}
-</main>
+	<main>
+		{@render children()}
+	</main>
 
-<nav id="navigation">
-	<ul>
-		<li>About</li>
-		<li>Projects</li>
-		<li>Writing</li>
-	</ul>
-</nav>
+	<nav id="navigation">
+		<ul>
+			<li><a href="/about">About</a></li>
+			<li><a href="/projects">Projects</a></li>
+			<li><a href="/writing">Writing</a></li>
+		</ul>
+	</nav>
+</div>
 
 <style>
+	#main-container {
+		width: clamp(40dvw, 100dvw, 600px);
+		margin: auto;
+	}
+
 	header {
 		display: flex;
 		flex-direction: column;
