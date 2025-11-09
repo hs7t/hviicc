@@ -1,6 +1,7 @@
 <script lang="ts">
 	import Header from '$lib/components/Header.svelte';
 	import Navigation from '$lib/components/Navigation.svelte';
+	import { page } from '$app/state';
 	import '$lib/styles/style.css';
 
 	let { children, data } = $props();
@@ -11,11 +12,11 @@
 
 <svelte:head>
 	<link rel="icon" href={favicon} />
-	<title>{data.title}</title>
+	<title>{page.data.title}</title>
 </svelte:head>
 
 <div id="main-container">
-	<Header title={data.title} />
+	<Header title={page.data.title} />
 	<main>
 		{@render children()}
 	</main>
