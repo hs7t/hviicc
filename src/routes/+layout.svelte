@@ -15,10 +15,10 @@
 <div id="main-container">
 	<header id="header">
 		<div class="section website-info">
-			<a href="#navigation">hop</a>
 			<p><a href="/">hvii.cc</a></p>
+			<a href="#navigation">hop to navigation</a>
 		</div>
-		<div class="section site-details">
+		<div class="section page-info">
 			<p>{data.title}</p>
 		</div>
 	</header>
@@ -51,6 +51,7 @@
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
+		align-items: center;
 
 		padding: 0.8rem;
 		flex-grow: 1;
@@ -61,10 +62,15 @@
 		color: var(--w-color-accent-A-contrast);
 	}
 
+	header .section.page-info {
+		justify-content: center;
+	}
+
 	nav ul {
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
+		align-items: center;
 
 		padding: 0.8rem;
 		flex-grow: 1;
