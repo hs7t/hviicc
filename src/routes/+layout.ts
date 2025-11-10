@@ -1,4 +1,4 @@
-let { prerender = true } = $props();
+export let prerender = true;
 
 export const load = () => {
 	return {
