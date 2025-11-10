@@ -1,18 +1,19 @@
 <script lang="ts">
-	import AnchorGrid from "$lib/components/AnchorGrid.svelte";
 	import { page } from '$app/state';
 
-	$: posts = (page.data.posts || []).map((post) => ({
-		name: post.meta.title,
-		anchor: post.path
-	}));
+	type PicturePost = {
+		date: string,
+		href: string
+	}
+
+	let posts = $derived(
+		(page.data.posts || []).map((post: any) => ({
+			date: post.meta.title,
+			href: post.path
+		} as PicturePost))
+	);
 </script>
 <section class="primary">
-    <h1>Writing</h1>
-    <section>
-        <h2>Poetry</h2>
-    </section>
-
-    <AnchorGrid items={posts}></AnchorGrid>
+    <h1>Pictures</h1>
 </section>
 
