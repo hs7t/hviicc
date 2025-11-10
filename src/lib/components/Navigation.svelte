@@ -1,8 +1,8 @@
 <script lang="ts">
-	let id = $props();
+	let { id } = $props();
 </script>
 
-<nav class="navigation">
+<nav class="navigation" {id}>
 	<ul>
 		<li><a href="/">About</a></li>
 		<li><a href="/projects">Projects</a></li>
