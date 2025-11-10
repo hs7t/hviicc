@@ -4,7 +4,6 @@ const fetchMarkdownPosts = async (allPostFiles: Record<string, any>) => {
 	const allPosts = await Promise.all(
 		iterablePostFiles.map(async ([path, resolver]) => {
 			const resolved = (await resolver()) as any;
-			console.log('Resolved:', resolved);
 			const { metadata } = resolved; // im sorry ts youre annoying sometimes
 			const postPath = path.replace('.md', '').replace('/src/routes', '');
 
