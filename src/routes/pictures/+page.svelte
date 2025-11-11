@@ -9,8 +9,9 @@
 
 	let posts = $derived(
 		(page.data.posts || []).map((post: any) => ({
-			date: post.meta.title,
-			href: post.meta.href
+			date: post.meta.date,
+			href: post.meta.href,
+            location: post.meta.location,
 		} as PicturePost))
 	);
 </script>
