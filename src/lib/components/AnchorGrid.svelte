@@ -1,7 +1,7 @@
 <script lang="ts">
 	type GridItem = {
 		title: string;
-		anchor: string;
+		path: string;
 	};
 
 	let { items }: { items: Array<GridItem> } = $props();
@@ -10,7 +10,7 @@
 <div class="anchor-grid">
 	{#each items as item}
 		<div class="grid-item">
-			<a href={item.anchor}>
+			<a href={item.path}>
 				<div class="content">
 					{item.title}
 				</div>
