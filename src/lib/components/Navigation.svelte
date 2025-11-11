@@ -12,8 +12,6 @@
 </nav>
 
 <style>
-	nav {
-	}
 	nav ul {
 		display: flex;
 		flex-direction: row;
