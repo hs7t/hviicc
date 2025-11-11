@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { page } from '$app/state';
+	import ImageGrid from '$lib/components/ImageGrid.svelte';
 
 	type PicturePost = {
 		date: string,
@@ -9,7 +10,7 @@
 	let posts = $derived(
 		(page.data.posts || []).map((post: any) => ({
 			date: post.meta.title,
-			href: post.path
+			href: post.meta.href
 		} as PicturePost))
 	);
 </script>
@@ -17,7 +18,7 @@
     <h1>Pictures</h1>
 
     <section>
-        
+        <ImageGrid items={posts} />
     </section>
 </section>
 
