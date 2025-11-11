@@ -47,6 +47,13 @@ h1 {
 	color: var(--w-color-accent-A);
 }
 
+ul {
+	display: flex;
+	flex-direction: column;
+	gap: 0.4em;
+	list-style-type: "— ";
+}
+
 p {
 	line-height: 1.6;
 }
