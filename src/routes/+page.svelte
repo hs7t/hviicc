@@ -21,14 +21,17 @@
 	</div>
 	<div class="paragraph-block">
 		<p>
-			Here are some of the ways you can find me:
+			You can find me...
 		</p>
 		<ul>
-			<li><a href="https://github.com/hs7t">hs7t</a> on GitHub</li>
+			<li><a href="https://github.com/hs7t">@hs7t</a> on GitHub</li>
 			<li>@ali on the <a href="https://hackclub.com/">Hack Club</a> Slack</li>
 			<li>
 				<a href="https://www.instagram.com/alipuntocom/">@alipuntocom</a> on Instagram (I
 				never really post anything there, though)
+			</li>
+			<li>
+				on <a href="https://www.are.na/ali-sinisterra/">are.na</a>
 			</li>
 			<li>on this wonderful e-mail thing, at hello [at] hvii [dot] cc</li>
 		</ul>
